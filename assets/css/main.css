@@ -1,0 +1,39 @@
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #edeeee;
+}
+
+.header{
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1{
+    color: #b51f5a;
+    z-index: 1;
+
+}
+
+.content{
+    color: #A5A4A0;
+}
+
+.portfolio{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolioitem{
+    padding: 10px;
+    text-align: center;
+}
+
+.portfoliotext{
+    padding: 5px;
+    color: #e14a6f;
+}
