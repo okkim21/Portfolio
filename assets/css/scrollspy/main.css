@@ -21,18 +21,17 @@ body {
     opacity: 0.9;
 }
 
-.fill-screen{
+.fill-screen {
     background-size: cover;
     background-position: center;
-
 }
 
-.title-row{
+.title-row {
     position: relative;
     min-height: 300px;
 }
 
-.title-image{
+.title-image {
     position: absolute;
     padding: 20px;
     top:50%;
@@ -42,18 +41,18 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.down-button{
+.down-button {
     position: absolute;
     bottom: 40px;
     width: 100%;
     text-align: center;
 }
 
-.down-button i{
+.down-button i {
     color:white;
 }
 
-.fixed-attachment{
+.fixed-attachment {
     background-attachment: fixed;
 }
 
@@ -68,7 +67,6 @@ body {
     font-size: 18px;
 }
 
-
 .mission-section {
     margin: 50px;
 }
@@ -80,7 +78,7 @@ body {
     height: 150px;
 }
 
-.contact-us{
+.contact-us {
     margin: 50px;
     text-align: center;
 }
@@ -92,14 +90,13 @@ footer {
     text-align: center;
 }
 
-
-
+/* responsive */
 @media (max-width: 400px) {
     .navbar-header {
         position: relative;
     }
 
-    .navbar img{
+    .navbar img {
         position: absolute;
         top: 0px;
         bottom: 0px;
@@ -107,7 +104,6 @@ footer {
         transform: scale(0.8,0.8);
     }
 }
-
 
 @media (max-width: 1024px) {
     .fixed-attachment{
