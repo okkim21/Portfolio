@@ -102,7 +102,7 @@ pImage3.addEventListener("mouseout", function(){TweenMax.fromTo(pImage3, 1, {
 pImage4.addEventListener("mouseover", function(){TweenMax.fromTo(pImage4, 0.7, {
     opacity:.7,boxShadow: "0px 0px 0px 0px rgba(216,118,144,0.3)"
 }, {
-    boxShadow: "0px 0px 10px 5px rgba(216,118,144,0.7)",
+    boxShadow: "0px 0px 10px 5px rgba(178,195,69,0.7)",
     repeat: -1,
     yoyo: true,
     ease: Linear.easeNone
