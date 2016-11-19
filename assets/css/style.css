@@ -94,7 +94,7 @@ Main Images styles
 .main {
     position: relative;
     width: 100%;
-    height: 70%;
+    height: 65%;
     left: 20%;
     top: 5%;
 }
@@ -238,7 +238,7 @@ lg  >= 1200
         margin-bottom: 20px;
     }
     .footer {
-      top: 20%;
+      top: 10%;
     }
 }
 @media only screen and (max-width: 915px) {
@@ -256,7 +256,7 @@ lg  >= 1200
        left: 35%;
    }
     .footer {
-        top:110%;
+        top:85%;
     }
 }
 @media only screen and (max-width: 633px) {
@@ -265,7 +265,7 @@ lg  >= 1200
         left: 30%;
     }
     .footer {
-        top:115%;
+        top:90%;
     }
 }
 @media only screen and (max-width: 512px) {
@@ -280,6 +280,6 @@ lg  >= 1200
         left: 20%;
     }
     .footer {
-        top:125%;
+        top:100%;
     }
 }
