@@ -1,0 +1,285 @@
+/*----------------------------------------
+Base styles
+-----------------------------------------*/
+html {
+    box-sizing: border-box;
+    height: 100%
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    /*padding: 15px;*/
+    margin: 0;
+    height: 100%;
+    background-color: #edeeee;
+    font-family: "Open Sans", sans-serif;
+    color: #263C40;
+    font-size: 18px;
+    overflow: hidden;
+}
+a {
+    color:#e0e0e0;
+    text-decoration: none;
+}
+a:hover {
+    color:#e0e0e0;
+    text-decoration: none;
+}
+.main-image{
+    position: absolute;
+    background: url(../image/main-back-image.png) no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+/*----------------------------
+Header styles
+------------------------------*/
+.header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 30%;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+.header-content {
+    position: absolute;
+    left: 15%;
+    width: 70%;
+}
+.header h3 {
+    letter-spacing: 4px;
+    font-weight: 600;
+    color: #b51f5a;
+    /*color: #263C40;*/
+    opacity: .7;
+}
+.header .greeting {
+    letter-spacing: 4px;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+.header .content01 {
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+.header .content02 {
+    font-size: 14px;
+    line-height: 2;
+    padding: 0;
+    margin: 0;
+    opacity:.7;
+}
+.header .content02 p {
+    padding: 0;
+    margin: 0;
+}
+#content-divider {
+background: #b51f5a;
+width: 100%;
+height: 1px;
+opacity: 0;
+}
+/*------------------------------
+Main Images styles
+-----------------------------------*/
+.main {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    left: 20%;
+    top: 5%;
+}
+.portfolio-main {
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    width: 70%;
+    height: 100%;
+}
+.portfolio-list {
+    width: 250px;
+    height: 150px;
+    margin-right: 60px;
+    margin-bottom: 5px;
+    flex-basis: auto;
+}
+.portfolio-image {
+    position: absolute;
+    display: block;
+    margin: 0;
+}
+.portfolio-image .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    -ms-transform: scale(0,1);
+    transform: scale(0,1);
+}
+.portfolio-image:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.portfolio-image img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+.portfolio-image:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
+}
+.portfolio-image h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    background-color: transparent;
+    color: #FFF;
+    padding: .5em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+}
+.portfolio-image a, .portfolio-image p {
+    color: #FFF;
+    padding: 0 0 15px 25px;
+    opacity: 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-decoration: none;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+}
+.portfolio-image:hover a, .portfolio-image:hover p, .portfolio-image:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+/*-------------------------------
+Footer styles
+----------------------------------*/
+.footer {
+    position: relative;
+    bottom: 0;
+    left :5%;
+    width: 100%;
+    height: 5%;
+    text-align: left;
+    color: #cdcdcc;
+    font-size: 10px;
+}
+
+/*---------------------------------------
+Responsive
+xs  < 768px
+sm  >= 768px
+md  >= 992px
+lg  >= 1200
+-----------------------------------------*/
+@media only screen and (max-width: 1328px) {
+    .portfolio-list {
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 1159px) {
+    .main {
+        top:7%;
+        left:17%;
+    }
+    .portfolio-list {
+        margin-right: 5px;
+    }
+}
+@media only screen and (max-width: 1093px) {
+    body {
+        overflow: visible;
+    }
+    .main-image{
+        display: none;
+    }
+    .main {
+        /*top:7%;*/
+        left:25%;
+    }
+    .portfolio-list {
+        margin-right: 70px;
+        margin-bottom: 20px;
+    }
+    .footer {
+      top: 20%;
+    }
+}
+@media only screen and (max-width: 915px) {
+    .portfolio-list {
+        margin-right: 15px;
+    }
+    .main {
+        left:22%;
+    }
+
+}
+@media only screen and (max-width: 758px) {
+   .main {
+       top: 15%;
+       left: 35%;
+   }
+    .footer {
+        top:110%;
+    }
+}
+@media only screen and (max-width: 633px) {
+    .main {
+        top: 20%;
+        left: 30%;
+    }
+    .footer {
+        top:115%;
+    }
+}
+@media only screen and (max-width: 512px) {
+    .main {
+        top: 25%;
+        left: 25%;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .main {
+        top: 30%;
+        left: 20%;
+    }
+    .footer {
+        top:125%;
+    }
+}

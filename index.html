@@ -4,68 +4,123 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title></title>
     <!-- Bootstrap core CSS -->
     <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container-fluid">
 
-        <div class="row">
-            <div class="header">
-                <h1 class="title">
-                    OK Kim
-                </h1>
-                <p class="content">
-                    I built the front-end of these web sites using HTML, CSS, SASS, Javascript, GASP(Green Socks),
-                    Bootstrap, Angular UI and other plugins.<br>
-
-                    These web sites have been built as my portfolio and some of assets (layout, images) are taken from the internet courses I took.<br>
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="portfolio">
-                <div class="portfolioitem">
-                    <a href="app/responsive/responsiveIndex.html"><img id="portfolio1" src="assets/image/responsiveimage.png" class="img-responsive"></a>
-                    <p class="portfoliotext" id="portfoliotext1">Mobile first reposive design</p>
-                </div>
-                <div class="portfolioitem">
-                    <a href="app/scrollspy/scrollmagicIndex.html"><img id="portfolio2" src="assets/image/scrollspyimage.png" class="img-responsive"></a>
-                    <p class="portfoliotext" id="portfoliotext2">parallax scrolling</p>
-                </div>
-                <div class="portfolioitem">
-                    <a href="app/anime/animeIndex.html"><img id="portfolio3" src="assets/image/animeimage.png" class="img-responsive"></a>
-                    <p class="portfoliotext" id="portfoliotext3">GSAP(Green Socks)</p>
-                </div>
-                <div class="portfolioitem">
-                    <a href="app/video/videoIndex.html"><img id="portfolio4" src="assets/image/videoimage.png" class="img-responsive"></a>
-                    <p class="portfoliotext" id="portfoliotext4">HTML5 Video</p>
-                </div>
-                <div class="portfolioitem">
-                    <a href="http://okkim-portfolio-church.azurewebsites.net/#/"><img id="portfolio5" src="assets/image/angularimage.png" class="img-responsive"></a>
-                    <p class="portfoliotext" id="portfoliotext5">Church site using Angular</p>
-                </div>
-            </div>
-        </div>
-
-
+    <div class="main-image">
     </div>
+    <header class="header">
+        <div class="header-content">
+            <h3>OK KIM</h3>
+            <p class="greeting" id="greeting-text">Hello</p>
+            <div class="content01">
+                <p id="content01-01">I'm a Front-End Web Developer who has a full understanding of
+                Software Development Life Cycle. </p>
 
-    <!-- Bootstrap core JavaScript
-      ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="lib/jquery/dist/jquery.min.js"></script>
-    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+            </div>
+            <div id="content-divider"></div>
+            <div class="content02" >
+                <p id="content02-01">I built the front-end of these web sites using HTML, CSS, SASS, Javascript, GASP(Green Socks),ScrollMagic,
+               Bootstrap, Angular UI and other plugins. These web sites have been built as my portfolio and some of
+               assets (layout, images) are taken from other resources.</p>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="portfolio-main">
+            <div class="portfolio-list">
+                <div class="portfolio-image">
+                    <img class="img-responsive" src="assets/image/scroll-main-image.png">
+                    <div class="overlay">
+                        <h2>ScrollMagic with GreenSocks</h2>
+                        <p>
+                            <a class="info" href="app/scrollspy/scrollmagicIndex.html">View Demo</a>
+                        </p>
+                    </div>
+               </div>
+            </div>
+            <div class="portfolio-list">
+                <div class="portfolio-image">
+                    <img class="img-responsive" src="assets/image/responsive-main-image.png">
+                    <div class="overlay">
+                        <h2>Mobile firtst, Responsive design</h2>
+                        <p>
+                            <a class="info" href="app/responsive/responsiveIndex.html">View Demo</a>
+                        </p>
+                    </div>
 
-    <script src="vendor/SplitText.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/utils/Draggable.min.js"></script>
+                </div>
+            </div>
+            <div class="portfolio-list">
+                <div class="portfolio-image">
+                    <img class="img-responsive" src="assets/image/video-main-image.png">
+                    <div class="overlay">
+                        <h2>HTML5 Video</h2>
+                        <p>
+                            <a class="info" href="app/video/videoIndex.html">View Demo</a>
+                        </p>
+                    </div>
 
-    <script src="assets/js/main.js?v=1"></script>
+                </div>
+            </div>
+            <div class="portfolio-list">
+                <div class="portfolio-image">
+                    <img class="img-responsive" src="assets/image/gsap-main-image.png">
+                    <div class="overlay">
+                        <h2>Animation</h2>
+                        <p>
+                            <a class="info" href="app/anime/animeIndex.html">View Demo</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="portfolio-list">
+                <div class="portfolio-image">
+                    <img class="img-responsive" src="assets/image/church-main-image.png">
+                    <div class="overlay">
+                        <h2>Church management with Angular</h2>
+                        <p>
+                            <a class="info" href="http://okkim-portfolio-church.azurewebsites.net/#/">View Demo</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="portfolio-list">
+                <div class="portfolio-image">
+                    <img class="img-responsive" src="assets/image/pin-main-image.png">
+                    <div class="overlay">
+                        <h2>Pin Scroll</h2>
+                        <p>
+                            <a class="info" href="app/pin/pinIndex.html">View Demo</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+         </div>
+    </main>
+    <footer class="footer">
+        <a href="http://www.freepik.com">Designed by Freepik</a>
+    </footer>
+
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="vendor/SplitText.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+<script src="assets/js/portfolio.js"></script>
 </body>
 </html>
