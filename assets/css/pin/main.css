@@ -22,6 +22,48 @@ h1 {
     font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif;
     font-weight: 700;
 }
+a {
+    text-decoration: none;
+}
+/*-----------------------------
+Header styles
+-------------------------------*/
+.main-header {
+    position: fixed;
+    height: 8%;
+    width: 100%;
+    background-color: #62C0E7;
+    margin: 0;
+    z-index: 5;
+    overflow: hidden;
+}
+.header-wrapper {
+    position: relative;
+    padding: 18px 10px;
+    height: 100%;
+}
+.logo {
+    position: absolute;
+    width: 127px;
+    height: 13px;
+}
+.menu {
+    position: absolute;
+    right: 10px;
+}
+.slide-content {
+    margin-bottom: 30px;
+}
+.cta {
+    color:#000;
+    background: #FADC5F url(../../image/pin/right.png) no-repeat 13px 16px;
+    border-radius: 8px;
+    padding: 13px 18px 13px 50px;
+    font-size:1.4em;
+    text-indent:20px;
+    margin-top:35px;
+}
+
 /*---------------------------
 Slide styles
 -----------------------------*/
