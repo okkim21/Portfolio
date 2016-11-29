@@ -13,100 +13,101 @@
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-
-    <div class="main-image">
-    </div>
     <header class="header">
+        <div class="main-image"></div>
         <div class="header-content">
-            <h3>OK KIM</h3>
+            <h3 id="name">OK KIM</h3>
             <p class="greeting" id="greeting-text">Hello</p>
             <div class="content01">
-                <p id="content01-01">I'm a Front-End Web Developer who has a full understanding of
-                Software Development Life Cycle. </p>
-
+                <p id="content01-01">I'm a Front-End Web Developer</p>
+                <p id="content01-02">who has a full understanding of
+                    Software Development Life Cycle. </p>
             </div>
-            <div id="content-divider"></div>
+
             <div class="content02" >
                 <p id="content02-01">I built the front-end of these web sites using HTML, CSS, SASS, Javascript, GASP(Green Socks),ScrollMagic,
-               Bootstrap, Angular UI and other plugins. These web sites have been built as my portfolio and some of
-               assets (layout, images) are taken from other resources.</p>
+               Bootstrap, Angular UI and other plugins. </p>
+                <p id="content02-02">These web sites have been built as my portfolio and some of
+                    assets (layout, images) are taken from other resources.</p>
             </div>
         </div>
+        
     </header>
     <main class="main">
-        <div class="portfolio-main">
-            <div class="portfolio-list">
-                <div class="portfolio-image">
-                    <img class="img-responsive" src="assets/image/scroll-main-image.png">
-                    <div class="overlay">
-                        <h2>ScrollMagic with GreenSocks</h2>
-                        <p>
-                            <a class="info" href="app/scrollspy/scrollmagicIndex.html">View Demo</a>
-                        </p>
-                    </div>
-               </div>
-            </div>
-            <div class="portfolio-list">
-                <div class="portfolio-image">
-                    <img class="img-responsive" src="assets/image/responsive-main-image.png">
-                    <div class="overlay">
-                        <h2>Mobile firtst, Responsive design</h2>
-                        <p>
-                            <a class="info" href="app/responsive/responsiveIndex.html">View Demo</a>
-                        </p>
-                    </div>
-
+        <div>
+            <h2>PORTFOLIO</h2>
+        </div>
+        <div class="portfolio-first">
+            <div id="scroll-scene" class="portfolio-item">
+                <div class="hover-image"></div>
+                <img src="assets/image/main/scrollmagic-image.png">
+                <div class="overlay">
+                    <span class="title">Parallax scrolling</span>
+                    <a class="link" href="app/scrollspy/scrollmagicIndex.html">Demo</a>
                 </div>
             </div>
-            <div class="portfolio-list">
-                <div class="portfolio-image">
-                    <img class="img-responsive" src="assets/image/video-main-image.png">
-                    <div class="overlay">
-                        <h2>HTML5 Video</h2>
-                        <p>
-                            <a class="info" href="app/video/videoIndex.html">View Demo</a>
-                        </p>
-                    </div>
-
+            <div id="responsive-scene" class="portfolio-item">
+                <div class="hover-image"></div>
+                <img src="assets/image/main/responsive-image.png">
+                <div class="overlay">
+                    <span class="title">Mobile first, responsive design</span>
+                    <a class="link" href="app/responsive/responsiveIndex.html">Demo</a>
                 </div>
             </div>
-            <div class="portfolio-list">
-                <div class="portfolio-image">
-                    <img class="img-responsive" src="assets/image/gsap-main-image.png">
-                    <div class="overlay">
-                        <h2>Animation</h2>
-                        <p>
-                            <a class="info" href="app/anime/animeIndex.html">View Demo</a>
-                        </p>
-                    </div>
-
+            <div id="video-scene" class="portfolio-item">
+                <div class="hover-image"></div>
+                <img src="assets/image/main/video-image.png">
+                <div class="overlay">
+                    <span class="title">HTML5 Video</span>
+                    <a class="link" href="app/video/videoIndex.html">Demo</a>
                 </div>
             </div>
-            <div class="portfolio-list">
-                <div class="portfolio-image">
-                    <img class="img-responsive" src="assets/image/church-main-image.png">
-                    <div class="overlay">
-                        <h2>Church management with Angular</h2>
-                        <p>
-                            <a class="info" href="http://okkim-portfolio-church.azurewebsites.net/#/">View Demo</a>
-                        </p>
-                    </div>
 
-                </div>
-            </div>
-            <div class="portfolio-list">
-                <div class="portfolio-image">
-                    <img class="img-responsive" src="assets/image/pin-main-image.png">
-                    <div class="overlay">
-                        <h2>Pin Scroll</h2>
-                        <p>
-                            <a class="info" href="app/pin/pinIndex.html">View Demo</a>
-                        </p>
-                    </div>
-
-                </div>
-            </div>
          </div>
+        <div class="portfolio-second">
+            <div id="pin-scene" class="portfolio-item">
+                <div class="hover-image"></div>
+                <img src="assets/image/main/pin-image.png">
+                <div class="overlay">
+                    <span class="title">Pin effection</span>
+                    <a class="link" href="app/pin/pinIndex.html">Demo</a>
+                </div>
+            </div>
+            <div id="crossfade-scene" class="portfolio-item">
+                <div class="hover-image"></div>
+                <img src="assets/image/main/crossfade-image.png">
+                <div class="overlay">
+                    <span class="title">Cross fade effection</span>
+                    <a class="link" href="app/cross-fade/index.html">Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-third">
+            <div id="game-scene" class="portfolio-item">
+                <div class="hover-image"></div>
+                <img src="assets/image/main/game-image.png">
+                <div class="overlay">
+                    <span class="title">Javascript animation game</span>
+                    <a class="link" href="app/anime/animeIndex.html">Demo</a>
+                </div>
+            </div>
+            <div id="church-scene" class="portfolio-item">
+                <div class="hover-image"></div>
+                <img src="assets/image/main/church-image.png">
+                <div class="overlay">
+                    <span class="title">Church Management</span>
+                    <a class="link" href="http://okkim-portfolio-church.azurewebsites.net/#/">Demo</a>
+                </div>
+            </div>
+            <div id="reveal-scene" class="portfolio-item">
+                <div class="hover-image"></div>
+                <img src="assets/image/main/reveal-image.png">
+                <div class="overlay">
+                    <span class="title">Revealing</span>
+                    <a class="link" href="app/reveal/revealIndex.html">Demo</a>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <a href="http://www.freepik.com">Designed by Freepik</a>
