@@ -217,7 +217,7 @@ Mouse over
 }
 .portfolio-item:hover .hover-image {
     visibility: visible;
-    opacity: .8;
+    opacity: .9;
     z-index: 3;
 }
 /*-------------------------------
