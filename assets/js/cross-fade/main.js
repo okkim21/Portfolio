@@ -116,7 +116,6 @@ $(document).ready(function(){
             setTimeout(function(){
                 // Prevent body from flickering
                 TweenMax.set($body, {autoAlpha: 1});
-                $slideIn = $('.slide.active');
                 animationIn($slideIn);
             }, 500);
 

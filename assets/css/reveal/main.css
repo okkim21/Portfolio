@@ -209,3 +209,36 @@ footer {
     padding-top: 5px;
     height: 40px;
 }
+/*---------------------------------------
+Responsive
+xs  < 768px
+sm  >= 768px
+md  >= 992px
+lg  >= 1200
+-----------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+    .global-header h1 {
+        font-size:35px ;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .global-nav {
+        margin-top: 20px;
+
+    }
+    .global-nav a {
+        font-size: 15px;
+    }
+    .food-container img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .parts h3 {
+        margin-left: 70%;
+    }
+}

@@ -314,14 +314,29 @@ Footer
     font-weight: normal;
 }
 
-/*------------------------------
-Response
--------------------------------*/
-@media screen and (max-width: 768px) {
+/*---------------------------------------
+Responsive
+xs  < 768px
+sm  >= 768px
+md  >= 992px
+lg  >= 1200
+-----------------------------------------*/
+
+@media only screen and (max-width: 768px) {
     .cb02-text {
         display: block;
     }
     #cb02 .cb02-image-container {
         display: none;
     }
+    nav {
+        display: none;
+    }
+    .header-container .wrapper {
+        padding-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
 }

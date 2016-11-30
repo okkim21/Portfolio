@@ -103,21 +103,30 @@ $(document).ready(function(){
     .setTween(part2ToStart)
     .addTo(controller);
 
-    var startPoint = 200;
-    // add headings for parts
-    $('.parts li').each(function(){
-        if (this.className === 'part7' |this === 'part8' || this === 'part9')
-        {
-            startPoint = 30
+    enquire.register("screen and (min-width: 992px)", {
+
+        match: function(){
+            displayCaption();
         }
-        // build a scene
-        var scene = new ScrollMagic.Scene({
-            triggerElement: this,
-            triggerHook:0.55,
-            offset: startPoint
-        })
-        .setClassToggle(this, 'fade-in')
-        .addTo(controller);
 
     });
+
+    function displayCaption() {
+        var startPoint = 200;
+        // add headings for parts
+        $('.parts li').each(function () {
+            if (this.className === 'part7' | this === 'part8' || this === 'part9') {
+                startPoint = 30
+            }
+            // build a scene
+            var scene = new ScrollMagic.Scene({
+                triggerElement: this,
+                triggerHook: 0.55,
+                offset: startPoint
+            })
+                .setClassToggle(this, 'fade-in')
+                .addTo(controller);
+
+        });
+    }
 });
