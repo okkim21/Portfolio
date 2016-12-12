@@ -17,35 +17,6 @@ var titleText = new SplitText(".title")
     pText4 = document.getElementById("portfoliotext4");
     pText5 = document.getElementById("portfoliotext5");
 
-//TweenMax.set(pText1, {opacity:0, y:15});
-//TweenMax.set(pText2, {opacity:0, y:-15});
-//TweenMax.set(pText3, {opacity:0, y:15});
-//TweenMax.set(pText4, {opacity:0, y:-15});
-//TweenMax.set(pText5, {opacity:0, y:-15});
-//
-///* title */
-//for (var i = 0; i < numWords; i++) {
-//
-//    tl.from(titleText.chars[i], .5, {
-//        force3D: true,
-//        opacity: 0,
-//        x: -500,
-//        transformOrigin: "0% 50%",
-//        ease:Elastic.easeInOut
-//    }, Math.random());
-//}
-//
-///* paragraph */
-//tl.staggerFrom(chars, 0.8, {opacity:0, scale:0, y:80, rotationX:180, transformOrigin:"0% 50% -50",  ease:Back.easeOut}, 0.01, "-=1");
-//
-///* portfolio stagger  and text */
-//tl.staggerTo(".portfolioitem", 1, {opacity:1,rotation:360, y:0, ease:Power1.easeIn}, 0.5, "-=2");
-//tl.to(pText1,1, {opacity:1, y:0, ease:Power1.easeIn},"-=2");
-//tl.to(pText2,1, {opacity:1, y:0, ease:Power1.easeIn},"-=1.5");
-//tl.to(pText3,1, {opacity:1, y:0, ease:Power1.easeIn},"-=1");
-//tl.to(pText4,1, {opacity:1, y:0, ease:Power1.easeIn},"-=.7");
-//tl.to(pText5,1, {opacity:1, y:0, ease:Power1.easeIn},"-=.7");
-
 /* portfolio border effect */
 tl.to(pImage1,1.5, {borderRadius:"25px", borderStyle:"solid", borderWidth:"thin", borderColor:"#c4c4c4"},"-=2");
 tl.to(pImage2,1.5, {borderRadius:"0px 20px", borderStyle:"solid", borderWidth:"thin", borderColor:"#c4c4c4"},"-=2");
