@@ -183,6 +183,9 @@ main {
 #video-scene .hover-image {
     background-color: #f6d247;
 }
+#taekwondo-scene .hover-image {
+    background-color: #ff0012;
+}
 #pin-scene .hover-image {
     background-color: #00bec8;
 }
