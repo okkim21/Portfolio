@@ -129,54 +129,63 @@ Reveal Effect styles
     text-align: left;
 }
 .parts li.part1 {
+
     position: relative;
     background-position: 30% 6px;
     min-height: 150px;
     z-index: 10;
 }
 .parts li.part2 {
+    display: none;
     position: relative;
     background-position: 30% -155px;
     min-height: 150px;
     z-index: 9;
 }
 .parts li.part3 {
+    display: none;
     position: relative;
     background-position: 30% -290px;
     min-height: 130px;
     z-index: 8;
 }
 .parts li.part4 {
+    display: none;
     position: relative;
     background-position: 30% -400px;
     min-height: 150px;
     z-index: 7;
 }
 .parts li.part5 {
+    display: none;
     position: relative;
     background-position: 30% -530px;
     min-height: 150px;
     z-index: 6;
 }
 .parts li.part6 {
+    display: none;
     position: relative;
     background-position: 30% -680px;
     min-height: 150px;
     z-index: 5;
 }
 .parts li.part7 {
+    display: none;
     position: relative;
     background-position: 30% -830px;
     min-height: 200px;
     z-index: 4;
 }
 .parts li.part8 {
+    display: none;
     position: relative;
     background-position: 30% -1030px;
     min-height: 150px;
     z-index: 3;
 }
 .parts li.part9 {
+    display: none;
     position: relative;
     background-position: 30% -1180px;
     min-height: 150px;

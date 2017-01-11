@@ -192,8 +192,8 @@ img {
     width: 100%;
     color: #6f5658;
     position: absolute;
-    top: 55px;
-    right: 1px;
+    top: 53px;
+    left: 1px;
     opacity: 1;
     visibility: visible;
 }
@@ -610,7 +610,7 @@ address{
 .map {
     position: relative;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
     float: left;
     width: 50%;
     opacity: .9;
